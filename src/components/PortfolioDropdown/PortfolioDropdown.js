@@ -30,7 +30,7 @@ class PortfolioDropdown extends Component {
                 <div className="dropdown-items">
                     {this.props.projects.map((project, index) => (
                         <div>
-                            <PortfolioDropdownItem url={project.images[0].ref} id={index} title={project.title} medium={project.medium} year={project.year} body={project.short_description} idx={index + 1} portfolioAction={this.props.portfolioHandler}/>
+                            <PortfolioDropdownItem url={project.images[0].ref} title={project.title} medium={project.medium} year={project.year} body={project.short_description} id={project.id} portfolioAction={this.props.portfolioHandler}/>
                         </div>
                     ))}
                 </div>

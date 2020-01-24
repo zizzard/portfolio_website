@@ -45,10 +45,10 @@ class PortfolioDropdownItem extends Component {
         return (
             <div className="portfolio-dropdown-container">
                 <div className="split" >
-                    <Link to={"/project" + this.props.idx} onClick={this.props.portfolioAction}><ImageFrame url={this.props.url} id={this.props.id} updateHeight={this.updateHeight}/></Link>
+                    <Link to={"/project" + this.props.id} onClick={this.props.portfolioAction}><ImageFrame url={this.props.url} id={this.props.id} updateHeight={this.updateHeight}/></Link>
                 </div>
                 <div className="split" id="vertical" >
-                    <Link to={"/project" + this.props.idx} onClick={this.props.portfolioAction}><Scroller height={this.state.height} /></Link>
+                    <Link to={"/project" + this.props.id} onClick={this.props.portfolioAction}><Scroller height={this.state.height} /></Link>
                     <div className="center-text">
                         <div className="dropdown-header">
                             <div className="dropdown-body">{this.props.title}</div>

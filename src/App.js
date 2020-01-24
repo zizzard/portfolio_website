@@ -154,52 +154,38 @@ class App extends Component {
             page = false
         }
 
-        if(this.state.dev){
-            this.generateProjectPage();
-            return(
-                <div className="App">
-                    {page}
-                </div>
-            );
-        }else{
-            return(
-                <Router>
-                    <Switch>
-                        <Route exact path="/">
-                            <div className="App">
+        return(
+            <Router>
+                <Switch>
+                    <Route exact path="/">
+                        <div className="App">
+                            {this.state.about}
+                            {this.state.portfolio}
+                            {this.state.experience}
+                            <Header color="white" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
+                                                  experienceAction={this.experienceHandler}/>
+                            {page}
+                        </div>
+                    </Route>
+                    {
+                        Projects.map((project, index) => (
+                            <Route exact path={"/project" + project.id} >
                                 {this.state.about}
                                 {this.state.portfolio}
                                 {this.state.experience}
-                                <Header color="white" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
+                                <Header color="home" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
                                                       experienceAction={this.experienceHandler}/>
-                                {page}
-                            </div>
-                        </Route>
-                        <Route exact path="/project1">
-                            {this.state.about}
-                            {this.state.portfolio}
-                            {this.state.experience}
-                            <Header color="home" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
-                                                  experienceAction={this.experienceHandler}/>
-                            {
-                                <Project title={Projects[0].title} medium={Projects[0].medium} description={Projects[0].description} year={Projects[0].year} size={Projects[0].size} images={Projects[0].images} />
-                            }
-                        </Route>
-                        <Route exact path="/project2">
-                            {this.state.about}
-                            {this.state.portfolio}
-                            {this.state.experience}
-                            <Header color="home" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
-                                                  experienceAction={this.experienceHandler}/>
-                            {
-                                <Project title={Projects[1].title} medium={Projects[1].medium} description={Projects[1].description} year={Projects[1].year} size={Projects[1].size} images={Projects[1].images} />
-                            }
-                        </Route>
-                    </Switch>
-                </Router>
-            );
-        }
+                                    <Project title={project.title} medium={project.medium} description={project.description} year={project.year} size={project.size} images={project.images} />
+                            </Route>
+                        ))
+                    }
+                </Switch>
+            </Router>
+        );
     }
 }
 
 export default App;
+
+// <Route exact path="/">
+// <Route path={process.env.PUBLIC_URL} component={App}>

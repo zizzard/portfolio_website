@@ -33,7 +33,7 @@ class Body extends Component {
             <div id="body">
                 {this.props.projects.map((project, index) => (
                     <div>
-                        <Link to={"/project" + (index + 1)}><ImageFrame url={project.images[0].ref} id={index} /></Link>
+                        <Link to={"/project" + project.id}><ImageFrame url={project.images[0].ref} id={project.id} /></Link>
                         <HomeCaption description={project.description} title={project.title} medium={project.medium} year={project.year} />
                     </div>
                 ))}

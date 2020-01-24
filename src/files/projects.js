@@ -1,5 +1,6 @@
 const projects = [
     {
+        id: 2,
         title: "title",
         medium: "medium",
         year: 2020,
@@ -34,6 +35,7 @@ const projects = [
         ]
     },
     {
+        id: 1,
         title: "title",
         medium: "medium",
         year: 2020,

@@ -35,7 +35,7 @@ class Header extends Component {
             this.rightText = "X CLOSE"
             this.action = this.props.close;
         }else if(this.props.color === "home"){
-            this.rightText = <Link to="/" style={{textDecoration: "none", color: "black"}}>HOME</Link>
+            this.rightText = <Link to={process.env.PUBLIC_URL} style={{textDecoration: "none", color: "black"}}>HOME</Link>
         }else{
             this.rightText = "ZACH IZZARD"
         }
