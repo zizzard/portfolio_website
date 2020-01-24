@@ -1,0 +1,15 @@
+.subfooter-container{
+    padding: 0px 0px 40px 0px;
+    text-align: center;
+}
+
+.subfooter-text{
+    padding: 12px 0px 12px 0px;
+    text-align: center;
+
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}

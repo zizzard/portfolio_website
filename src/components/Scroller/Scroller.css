@@ -1,0 +1,23 @@
+.scroll{
+    color: white;
+    font-family: "Arial";
+    font-size: 20px;
+    font-style:italic;
+    font-variant: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: calc(50vw-10px);
+    position: relative;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

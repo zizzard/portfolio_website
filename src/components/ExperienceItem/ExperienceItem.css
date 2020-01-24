@@ -1,0 +1,52 @@
+.experience-item-container{
+    padding-bottom: 20px;
+}
+
+.experience-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-subtitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-employeer{
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}
+
+.experience-location{
+    font-family: "Arial";
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.experience-title{
+    font-family: "Arial";
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.experience-dates{
+    font-family: "Arial";
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.experience-body{
+    padding-top: 16px;
+
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    text-align: justify;
+}

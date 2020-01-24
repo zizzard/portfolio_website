@@ -1,0 +1,8 @@
+.hr-half{
+  	display: block;
+    background: black;
+    border: none;
+    margin: 0px;
+    height: 2px;
+    margin-bottom: 16px;
+}

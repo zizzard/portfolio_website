@@ -1,0 +1,32 @@
+.project-header{
+    padding: 40px 10px 20px 10px;
+}
+
+.project-title-container{
+    font-family: "Arial";
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    display: flex;
+}
+
+.project-title{
+
+}
+
+.project-medium{
+    padding-left: 35px;
+}
+
+.project-year{
+    padding-left: 70px;
+}
+
+.project-description{
+    font-family: "Arial";
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    text-align: justify;
+}

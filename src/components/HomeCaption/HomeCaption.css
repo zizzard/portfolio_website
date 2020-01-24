@@ -1,0 +1,36 @@
+.caption{
+    padding: 0px 10px 34px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    font-family: "Arial";
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}
+
+.caption-left{
+    float: left
+}
+
+.caption-right{
+    display: flex;
+}
+
+.caption-expand{
+
+}
+
+.caption-title{
+
+}
+
+.caption-medium{
+    padding-left: 35px;
+}
+
+.caption-year{
+    padding-left: 70px;
+}

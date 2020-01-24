@@ -1,0 +1,44 @@
+.header{
+    height: 37px;
+    width: calc(100vw);
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    z-index: 0;
+    user-select: none;
+}
+
+.header-left{
+    display: flex;
+}
+
+.header-right{
+    float: right;
+    text-decoration: none;
+}
+
+.header-item{
+    padding: 10px 10px 0px 10px;
+    font-family: "Arial";
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.strikeout {
+  position: relative;
+  cursor: pointer;
+
+}
+.strikeout::after {
+  border-bottom: 0.19em solid white;
+  content: "";
+  left: -2px;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute;
+  right: -2px;
+  top: 45%;
+}

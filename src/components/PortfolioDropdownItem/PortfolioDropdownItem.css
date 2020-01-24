@@ -1,0 +1,49 @@
+.portfolio-dropdown-container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+}
+
+.split{
+    width: 50%;
+    padding: 0px 10px 10px 0px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+#vertical{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.center-text{
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    padding: 0px 5px 5px 0px;
+    background: black;
+}
+
+.dropdown-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#right{
+    text-align: right;
+    padding-bottom: 25px;
+}
+
+.dropdown-body{
+    color: white;
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    text-align: justify;
+    word-wrap: break-word;
+}

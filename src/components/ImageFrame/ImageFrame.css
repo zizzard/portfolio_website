@@ -1,0 +1,8 @@
+.image-frame{
+    width: calc(100% - 20px);
+    padding: 0px 10px 0px 10px;
+}
+
+.image{
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+.organization-container{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.organization-bold{
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}

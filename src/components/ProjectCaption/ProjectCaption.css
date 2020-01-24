@@ -1,0 +1,17 @@
+.caption{
+    padding: 0px 10px 34px 10px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    color: black;
+
+    font-family: "Arial";
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}
+
+.caption-expand{
+
+}

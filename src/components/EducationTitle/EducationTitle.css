@@ -1,0 +1,23 @@
+.education-title-container{
+    padding-bottom: 20px;
+}
+
+.education-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-bold{
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}
+
+.education-small{
+    font-family: "Arial";
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+}

@@ -1,0 +1,33 @@
+.contact-container{
+    padding-bottom: 10px;
+}
+
+.contact-title{
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    padding-top: 30px;
+    text-align: left;
+}
+
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-item{
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+}
+
+.contact-link{
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    text-decoration: underline;
+}

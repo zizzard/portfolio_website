@@ -1,0 +1,11 @@
+.coursework-item-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coursework-item{
+    font-family: "Arial";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+}
