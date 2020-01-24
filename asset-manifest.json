@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/portfolio_website/static/css/main.04c2db49.chunk.css",
+    "main.js": "/portfolio_website/static/js/main.3671b3ca.chunk.js",
+    "main.js.map": "/portfolio_website/static/js/main.3671b3ca.chunk.js.map",
+    "runtime-main.js": "/portfolio_website/static/js/runtime-main.6b1461b0.js",
+    "runtime-main.js.map": "/portfolio_website/static/js/runtime-main.6b1461b0.js.map",
+    "static/js/2.9363df19.chunk.js": "/portfolio_website/static/js/2.9363df19.chunk.js",
+    "static/js/2.9363df19.chunk.js.map": "/portfolio_website/static/js/2.9363df19.chunk.js.map",
+    "index.html": "/portfolio_website/index.html",
+    "precache-manifest.d9182b8a57f94e7f46645e62a6670cd6.js": "/portfolio_website/precache-manifest.d9182b8a57f94e7f46645e62a6670cd6.js",
+    "service-worker.js": "/portfolio_website/service-worker.js",
+    "static/css/main.04c2db49.chunk.css.map": "/portfolio_website/static/css/main.04c2db49.chunk.css.map",
+    "static/js/2.9363df19.chunk.js.LICENSE": "/portfolio_website/static/js/2.9363df19.chunk.js.LICENSE",
+    "static/media/35mm-fall-five.jpg": "/portfolio_website/static/media/35mm-fall-five.000d1ace.jpg",
+    "static/media/35mm-fall-four.jpg": "/portfolio_website/static/media/35mm-fall-four.c7b22e81.jpg",
+    "static/media/35mm-fall-one.jpg": "/portfolio_website/static/media/35mm-fall-one.203b0390.jpg",
+    "static/media/35mm-fall-three.jpg": "/portfolio_website/static/media/35mm-fall-three.925f8449.jpg",
+    "static/media/35mm-fall-two.jpg": "/portfolio_website/static/media/35mm-fall-two.e631f9d4.jpg",
+    "static/media/35mm-summer-five.jpg": "/portfolio_website/static/media/35mm-summer-five.83a8ea53.jpg",
+    "static/media/35mm-summer-four.jpg": "/portfolio_website/static/media/35mm-summer-four.664ab4b6.jpg",
+    "static/media/35mm-summer-one.jpg": "/portfolio_website/static/media/35mm-summer-one.e8813787.jpg",
+    "static/media/35mm-summer-six.jpg": "/portfolio_website/static/media/35mm-summer-six.cbd107bf.jpg",
+    "static/media/35mm-summer-three.jpg": "/portfolio_website/static/media/35mm-summer-three.899819a7.jpg",
+    "static/media/35mm-summer-two.jpg": "/portfolio_website/static/media/35mm-summer-two.e27e2c90.jpg",
+    "static/media/portrait.png": "/portfolio_website/static/media/portrait.fe4a7a7a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b1461b0.js",
+    "static/js/2.9363df19.chunk.js",
+    "static/css/main.04c2db49.chunk.css",
+    "static/js/main.3671b3ca.chunk.js"
+  ]
+}
