@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Contact.css';
 import '../../App.css'
-
+import Resume from '../../files/resume.pdf';
 
 class Contact extends Component {
 
@@ -33,15 +33,15 @@ class Contact extends Component {
                 <div className="contact-title">CONTACT</div>
                 <div className="contact-row">
                     <div className="contact-item">Zach Izzard</div>
-                    <div className="contact-link">Resume</div>
+                    <div className="contact-link"><a href={Resume} style={inputStyle}>Resume</a></div>
                 </div>
                 <div className="contact-row">
                     <div className="contact-item">6097319486</div>
-                    <div className="contact-link">GitHub</div>
+                    <div className="contact-link"><a href="https://github.com/zizzard" style={inputStyle}>GitHub</a></div>
                 </div>
                 <div className="contact-row">
                     <div className="contact-item">zachizzard@gmail.com</div>
-                    <div className="contact-link">LinkedIn</div>
+                    <div className="contact-link"><a href="https://www.linkedin.com/in/zachizzard/" style={inputStyle}>LinkedIn</a></div>
                 </div>
 
             </div>

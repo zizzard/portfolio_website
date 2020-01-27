@@ -16,7 +16,6 @@ class App extends Component {
     constructor(props){
         super(props);
 
-        this.generateProjectPage = this.generateProjectPage.bind(this);
         this.aboutHandler = this.aboutHandler.bind(this);
         this.portfolioHandler = this.portfolioHandler.bind(this);
         this.experienceHandler = this.experienceHandler.bind(this);
@@ -32,16 +31,6 @@ class App extends Component {
             page: "body",
             dev: false
         };
-    }
-
-    generateProjectPage(id){
-        var project = Projects[id]
-        if(!project) return false;
-
-        this.setState({
-            project: <Project title={project.title} medium={project.medium} description={project.description} year={project.year} size={project.size} images={project.images} />,
-            page: "project_1"
-        });
     }
 
     aboutHandler(){
@@ -186,6 +175,3 @@ class App extends Component {
 }
 
 export default App;
-
-// <Route exact path="/">
-// <Route path={process.env.PUBLIC_URL} component={App}>
