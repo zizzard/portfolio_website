@@ -34,7 +34,6 @@ class App extends Component {
     }
 
     aboutHandler(){
-        console.log("ABOUT");
         if(this.state.aboutShow){
             this.setState({
                 aboutShow: false,
@@ -136,13 +135,6 @@ class App extends Component {
     }
 
     render(){
-        let page
-        if(this.state.page === "body"){
-            page = <Body projects={Projects} />
-        }else{
-            page = false
-        }
-
         return(
             <Router>
                 <Switch>
@@ -153,7 +145,7 @@ class App extends Component {
                             {this.state.experience}
                             <Header color="white" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
                                                   experienceAction={this.experienceHandler}/>
-                            {page}
+                            {this.state.page === "body" ? <Body projects={Projects} /> : null}
                         </div>
                     </Route>
                     {
@@ -164,7 +156,7 @@ class App extends Component {
                                 {this.state.experience}
                                 <Header color="home" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
                                                       experienceAction={this.experienceHandler}/>
-                                    <Project title={project.title} medium={project.medium} description={project.description} year={project.year} size={project.size} images={project.images} />
+                                    {this.state.page === "body" ? <Project title={project.title} medium={project.medium} description={project.description} year={project.year} size={project.size} images={project.images} /> : null}
                             </Route>
                         ))
                     }
