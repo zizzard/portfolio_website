@@ -13,3 +13,14 @@
     font-variant: normal;
     font-weight: 700;
 }
+
+.subfooter-text-right{
+    padding: 20px 10px 0px 0px;
+    text-align: right;
+
+    font-family: "Arial";
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
