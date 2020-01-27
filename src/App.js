@@ -19,17 +19,13 @@ class App extends Component {
         this.aboutHandler = this.aboutHandler.bind(this);
         this.portfolioHandler = this.portfolioHandler.bind(this);
         this.experienceHandler = this.experienceHandler.bind(this);
-        this.setAboutShowState = this.setAboutShowState.bind(this);
-        this.setPortfolioShowState = this.setPortfolioShowState.bind(this);
-        this.setExperienceShowState = this.setExperienceShowState.bind(this);
         this.close = this.close.bind(this);
 
         this.state = {
             aboutShow: false,
             portfolioShow: false,
             experienceShow: false,
-            page: "body",
-            dev: false
+            body: true
         };
     }
 
@@ -38,20 +34,16 @@ class App extends Component {
             this.setState({
                 aboutShow: false,
                 portfolioShow: false,
-                experienceShow: false
+                experienceShow: false,
+                body: true
             });
-            this.setAboutShowState(false);
-            this.setPortfolioShowState(false);
-            this.setExperienceShowState(false);
         }else{
             this.setState({
                 aboutShow: true,
                 portfolioShow: false,
-                experienceShow: false
+                experienceShow: false,
+                body: true
             });
-            this.setAboutShowState(true);
-            this.setPortfolioShowState(false);
-            this.setExperienceShowState(false);
         }
     }
 
@@ -60,20 +52,16 @@ class App extends Component {
             this.setState({
                 aboutShow: false,
                 portfolioShow: false,
-                experienceShow: false
+                experienceShow: false,
+                body: true
             });
-            this.setAboutShowState(false);
-            this.setPortfolioShowState(false);
-            this.setExperienceShowState(false);
         }else{
             this.setState({
                 aboutShow: false,
                 portfolioShow: true,
-                experienceShow: false
+                experienceShow: false,
+                body: false
             });
-            this.setAboutShowState(false);
-            this.setPortfolioShowState(true);
-            this.setExperienceShowState(false);
         }
     }
 
@@ -82,56 +70,26 @@ class App extends Component {
             this.setState({
                 aboutShow: false,
                 portfolioShow: false,
-                experienceShow: false
+                experienceShow: false,
+                body: true
             });
-            this.setAboutShowState(false);
-            this.setPortfolioShowState(false);
-            this.setExperienceShowState(false);
         }else{
             this.setState({
                 aboutShow: false,
                 portfolioShow: false,
-                experienceShow: true
+                experienceShow: true,
+                body: true
             });
-            this.setAboutShowState(false);
-            this.setPortfolioShowState(false);
-            this.setExperienceShowState(true);
         }
-    }
-
-    setAboutShowState(t){
-        if(t) this.setState({about: <AboutDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} />})
-        else this.setState({about: false })
-    }
-
-    setPortfolioShowState(t){
-        if(t){
-            this.setState({
-                portfolio: <PortfolioDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} projects={Projects}/>,
-                page: "portfolio"
-            });
-        }else{
-            this.setState({
-                portfolio: false,
-                page: "body"
-            })
-        }
-    }
-
-    setExperienceShowState(t){
-        if(t) this.setState({experience: <ExperienceDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} /> })
-        else this.setState({experience: false })
     }
 
     close(){
         this.setState({
             aboutShow: false,
             portfolioShow: false,
-            experienceShow: false
+            experienceShow: false,
+            body: true
         });
-        this.setAboutShowState(false);
-        this.setPortfolioShowState(false);
-        this.setExperienceShowState(false);
     }
 
     render(){
@@ -140,23 +98,23 @@ class App extends Component {
                 <Switch>
                     <Route exact path="/">
                         <div className="App">
-                            {this.state.about}
-                            {this.state.portfolio}
-                            {this.state.experience}
+                            {this.state.aboutShow ? <AboutDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} /> : null}
+                            {this.state.portfolioShow ? <PortfolioDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} projects={Projects}/> : null}
+                            {this.state.experienceShow ? <ExperienceDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} /> : null}
                             <Header color="white" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
                                                   experienceAction={this.experienceHandler}/>
-                            {this.state.page === "body" ? <Body projects={Projects} /> : null}
+                            {this.state.body ? <Body projects={Projects} /> : null}
                         </div>
                     </Route>
                     {
                         Projects.map((project, index) => (
                             <Route exact path={"/project" + project.id} >
-                                {this.state.about}
-                                {this.state.portfolio}
-                                {this.state.experience}
+                                {this.state.aboutShow ? <AboutDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} /> : null}
+                                {this.state.portfolioShow ? <PortfolioDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} projects={Projects}/> : null}
+                                {this.state.experienceShow ? <ExperienceDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} /> : null}
                                 <Header color="home" aboutAction={this.aboutHandler} portfolioAction={this.portfolioHandler}
                                                       experienceAction={this.experienceHandler}/>
-                                    {this.state.page === "body" ? <Project title={project.title} medium={project.medium} description={project.description} year={project.year} size={project.size} images={project.images} /> : null}
+                                {this.state.body ? <Project title={project.title} medium={project.medium} description={project.description} year={project.year} size={project.size} images={project.images} /> : null}
                             </Route>
                         ))
                     }

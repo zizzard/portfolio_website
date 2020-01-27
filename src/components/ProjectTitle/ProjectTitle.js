@@ -30,9 +30,7 @@ class ProjectTitle extends Component {
                     <div className="project-medium">{this.props.medium}</div>
                     <div className="project-year">{this.props.year}</div>
                 </div>
-                <div className="project-description">
-                    {this.props.description}
-                </div>
+                <div className="project-description">{this.props.description}</div>
             </div>
         )
     }
