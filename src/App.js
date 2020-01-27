@@ -29,6 +29,10 @@ class App extends Component {
         };
     }
 
+    componentDidMount() {
+        document.title = "ZACH IZZARD";
+    }
+
     aboutHandler(){
         if(this.state.aboutShow){
             this.setState({
