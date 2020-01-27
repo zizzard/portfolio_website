@@ -30,7 +30,7 @@
 }
 
 .caption-title{
-
+    padding-left: 140px;
 }
 
 .caption-medium{
@@ -42,15 +42,16 @@
 }
 
 
-.caption-description{
-    font-weight: normal;
-    text-align: justify;
-}
-
-.view-project{
+.caption-view{
     font-weight: 700;
     text-align: right;
     display: block;
     color: black;
     text-decoration: none;
+}
+
+.caption-description{
+    font-weight: normal;
+    text-align: justify;
+    padding-top: 2px;
 }

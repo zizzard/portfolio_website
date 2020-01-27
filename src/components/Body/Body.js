@@ -32,7 +32,7 @@ class Body extends Component {
         return (
             <div id="body">
                 {this.props.projects.map((project, index) => (
-                    <div>
+                    <div key={"body_" + project.id}>
                         <Link to={"/project" + project.id}><ImageFrame url={project.images[0].ref} id={project.id} /></Link>
                         <HomeCaption description={project.description} title={project.title} medium={project.medium} year={project.year} id={project.id} />
                     </div>

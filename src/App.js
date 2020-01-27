@@ -94,9 +94,9 @@ class App extends Component {
 
     render(){
         return(
-            <Router>
+            <Router key="root">
                 <Switch>
-                    <Route exact path="/">
+                    <Route exact path="/" key="app">
                         <div className="App">
                             {this.state.aboutShow ? <AboutDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} /> : null}
                             {this.state.portfolioShow ? <PortfolioDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} projects={Projects}/> : null}
@@ -108,7 +108,7 @@ class App extends Component {
                     </Route>
                     {
                         Projects.map((project, index) => (
-                            <Route exact path={"/project" + project.id} >
+                            <Route exact path={"/project" + project.id} key={project.id}>
                                 {this.state.aboutShow ? <AboutDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} /> : null}
                                 {this.state.portfolioShow ? <PortfolioDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} projects={Projects}/> : null}
                                 {this.state.experienceShow ? <ExperienceDropdown aboutHandler={this.aboutHandler} portfolioHandler={this.portfolioHandler} experienceHandler={this.experienceHandler} close={this.close} /> : null}

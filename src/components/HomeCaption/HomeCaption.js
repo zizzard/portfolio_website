@@ -49,6 +49,7 @@ class HomeCaption extends Component {
                         <div className="caption-expand-pointer" onClick={this.expand}>{this.state.expandText}</div>
                     </div>
                     <div className="caption-right">
+                        <div className="caption-view"><Link to={"/project" + this.props.id} className="caption-view"> {"<"} click here to view this project {">"} </Link></div>
                         <div className="caption-title">{this.props.title}</div>
                         <div className="caption-medium">{this.props.medium}</div>
                         <div className="caption-year">{this.props.year}</div>
@@ -56,7 +57,6 @@ class HomeCaption extends Component {
                 </div>
                 {this.state.expand ? <div>
                                         <div className="caption-description">{this.props.description}</div>
-                                        <Link to={"/project" + this.props.id} className="view-project"><div>CLICK HERE TO VIEW THIS PROJECT</div></Link>
                                     </div> : null}
             </div>
         )
