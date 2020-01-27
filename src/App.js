@@ -10,7 +10,7 @@ import Project from './components/Project/Project.js'
 
 import Projects from './files/projects.js'; //project page json file
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
     constructor(props){
