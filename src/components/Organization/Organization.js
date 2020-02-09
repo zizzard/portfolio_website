@@ -3,6 +3,7 @@ import './Organization.css';
 import '../../App.css'
 
 import OrganizationItem from '../OrganizationItem/OrganizationItem.js'
+import OrganizationJson from '../../files/organizations.js' //organization page json file
 
 class Organization extends Component {
 
@@ -27,14 +28,11 @@ class Organization extends Component {
         return (
             <div className="organization-container">
                 <div className="education-bold">RELEVANT COURSEWORK</div>
-                <OrganizationItem title="AAAI STUDENT CHAPTER AT USC - " subtitle="TREASURER (E-BOARD)" dates="2019 TO PRESENT"/>
-                <OrganizationItem title="HACKSC JR - " subtitle="E-BOARD" dates="2017 TO 2019"/>
-                <OrganizationItem title="CORPUS CALLOSUM - " subtitle="DEVELOPER" dates="2019 TO PRESENT"/>
-                <OrganizationItem title="JOINT EDUCATION PROJECT - " subtitle="STUDENT TEACHER" dates="2018 TO 2019"/>
-                <OrganizationItem title="SCIENCE OUTREACH - " subtitle="STUDENT TEACHER" dates="2017 TO 2018"/>
-                <OrganizationItem title="PERIGO - " subtitle="FRONT-END DEVELOPER" dates="2018 TO 2019"/>
-                <OrganizationItem title="DEAN’S LIST" subtitle="" dates="ALL SEMESETERS"/>
-                <OrganizationItem title="NEW YORK ALUMNI ASSOCIATION SCHOLARSHIP" subtitle="" dates="2018"/>
+                {
+                    OrganizationJson.map((item, i) => (
+                        <OrganizationItem title={item.title} subtitle={item.subtitle} dates={item.dates}/>
+                    ))
+                }
             </div>
         )
     }

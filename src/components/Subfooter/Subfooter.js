@@ -28,7 +28,7 @@ class Subfooter extends Component {
                 <LineBreak/>
                 <div className="subfooter-text">THANKFUL YOU STOPPED BY</div>
                 <LineBreak/>
-                <div className="subfooter-text-right">a site designed and built by zach izzard, 2020</div>
+                <div className="subfooter-text-right">A SITE DESIGNED AND BUILT BY ZACH IZZARD, 2020</div>
             </div>
         )
     }
