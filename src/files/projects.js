@@ -9,23 +9,23 @@ const projects = [
         size: 5,
         images: [
             {
-                ref: require('./35mm-fall-one.jpg'),
+                ref: require('./project2/35mm-fall-one.jpg'),
                 caption: "1/5"
             },
             {
-                ref: require('./35mm-fall-two.jpg'),
+                ref: require('./project2/35mm-fall-two.jpg'),
                 caption: "2/5"
             },
             {
-                ref: require('./35mm-fall-three.jpg'),
+                ref: require('./project2/35mm-fall-three.jpg'),
                 caption: "3/5"
             },
             {
-                ref: require('./35mm-fall-four.jpg'),
+                ref: require('./project2/35mm-fall-four.jpg'),
                 caption: "4/5"
             },
             {
-                ref: require('./35mm-fall-five.jpg'),
+                ref: require('./project2/35mm-fall-five.jpg'),
                 caption: "5/5"
             }
         ]
@@ -40,23 +40,23 @@ const projects = [
         size: 6,
         images: [
             {
-                ref: require('./35mm-summer-one.jpg'),
+                ref: require('./project1/35mm-summer-one.jpg'),
                 caption: "1/6"
             },
             {
-                ref: require('./35mm-summer-two.jpg'),
+                ref: require('./project1/35mm-summer-two.jpg'),
                 caption: "2/6"
             },
             {
-                ref: require('./35mm-summer-three.jpg'),
+                ref: require('./project1/35mm-summer-three.jpg'),
                 caption: "3/6"
             },
             {
-                ref: require('./35mm-summer-four.jpg'),
+                ref: require('./project1/35mm-summer-four.jpg'),
                 caption: "4/6"
             },
             {
-                ref: require('./35mm-summer-five.jpg'),
+                ref: require('./project1/35mm-summer-five.jpg'),
                 caption: "5/6"
             },
             {
